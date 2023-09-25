@@ -1,0 +1,37 @@
+@mixin my-btn{
+    color: $blue;
+    background-color: transparent;
+    border-color: $blue;
+    border-width: $border-width;
+    font-family: $text-font;
+}
+
+@mixin button-hover{
+    background-color: $blue;
+    border-color: $dark;
+    box-shadow:  $hover-box-shadow;
+    border-radius: $hover-border-radius;
+}
+
+@mixin button-active{
+    color: $dark;
+    background-color: $light !important; 
+    border-color: dark;
+    box-shadow: none;
+}
+
+a.my-btn, .my-btn{
+
+    @include my-btn();
+
+    &:hover{
+        @include button-hover();
+        svg {
+            fill: $dark;
+        }
+    }
+
+    &:active{
+        @include button-active();
+    }
+}

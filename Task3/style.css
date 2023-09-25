@@ -1,0 +1,239 @@
+
+:root{
+    --dark: #222831;
+    --grey:#393E46;
+    --light: #EEEEEE;
+    --blue: #00ADB5;
+}
+
+*{
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+
+
+body{
+    background-color: var(--dark);
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--dark);
+    border-bottom: 3px solid var(--blue);
+}
+
+.navbar .nav-item{
+    margin: 4px;
+}
+
+.navbar .navbar-collapse{
+    flex-grow: unset;
+}
+
+.navbar .nav-item:hover .nav-link, .navbar .nav-item .active{
+    background-color: var(--blue);
+    border-color: var(--dark);
+    box-shadow: 3px 3px var(--light);
+    border-radius: 10px;
+}
+
+.navbar .nav-item .nav-link:active{
+    color: var(--dark);
+    background-color: var(--light) !important; 
+    border-color: var(--dark);
+    box-shadow: none;
+}
+
+
+.navbar .nav-link{
+    color: var(--light);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+a.my-btn, .my-btn{
+    color: var(--blue);
+    background-color: transparent;
+    border-color: var(--blue);
+    border-width: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar button.navbar-toggler{
+    float: right;
+    border-color: var(--blue);
+    border-width: 3px;
+}
+
+.navbar button.navbar-toggler:hover{
+    border-color: var(--dark);
+    border-width: 3px;
+    box-shadow: 3px 3px var(--light);
+    background-color: var(--grey)
+}
+
+.navbar button.navbar-toggler:active{
+    background-color: var(--light);
+    box-shadow: none;
+}
+
+
+.navbar button.navbar-toggler:hover i{
+    color: var(--dark);
+}
+
+.navbar .btn:hover, a.my-btn:hover{
+    background-color: var(--blue);
+    border-color: var(--dark);
+    box-shadow: 3px 3px var(--light);
+}
+
+.navbar .btn:hover svg{
+    fill: var(--dark);
+}
+
+.navbar .btn:active, a.my-btn:active{
+    color: var(--dark);
+    background-color: var(--light) !important; 
+    border-color: var(--dark);
+    box-shadow: none;
+}
+
+#carousel{
+    background-color: var(--dark);
+}
+
+
+#carousel .my-grid::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 49%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(34,40,49,1) 2%, rgba(34,40,49,0.35) 13%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 70%, rgba(34,40,49,0.35) 85%, rgba(34,40,49,1) 97%);
+}
+
+
+.carousel-text{
+    color: var(--light);
+    padding-right: 10px;
+}
+
+.carousel-text h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+.top-seller{
+    margin: 0;
+    padding: 15px 20px 10px;
+    background-color: var(--dark);
+    color: var(--light);
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(0,0,0,0) 25%, rgba(0,173,181,1) 50%) 1 stretch;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.my-grid{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    column-gap: 1vw;
+}
+
+.my-grid img{
+    width: 50vw;
+}
+
+.my-grid p{
+    padding-right: 2vw;
+}
+
+.products-container{
+    margin: 0;
+    background-color: var(--dark);
+    padding: 20px;
+}
+
+.products-container .card{
+    background-color: var(--grey);
+}
+
+.products-container .card .card-body{
+    color: var(--light);
+}
+
+.products-container .card .card-body h5{
+    font-family: 'Raleway', sans-serif;
+}
+
+.products-container .card .card-body p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.products-container .card .item-list .list-group-item{
+    background-color: var(--grey);
+    color: var(--light);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer footer{
+    background-color: var(--dark);
+    border-top: 2px solid var(--blue);
+    
+}
+
+.footer span{
+    color: var(--light);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer svg{
+    fill: var(--blue);
+}
+
+
+@media  screen and (max-width: 750px) {
+    .my-grid{
+        display: block;
+    }
+
+    .my-grid img{
+        width: 100vw;
+        position: absolute;
+    }
+
+    .my-grid .text-start{
+        width: 100vw;
+        z-index: 2;
+        padding: 1vh 1vw;
+        margin-top: 40vh;
+    }
+
+    #carousel .my-grid::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba(34,40,49,1) 0%, rgba(0,0,0,0) 75%);
+        z-index: 1;
+    }
+}
+
+
+@media  screen and (max-width:550px) {
+
+    .my-grid .text-start{
+        margin-top: 20vh;
+    }
+    
+    #carousel .my-grid::before{
+        background: linear-gradient(to top, rgba(34,40,49,0.8) 0%, rgba(0,0,0,0) 90%);
+    }
+}

@@ -1,0 +1,197 @@
+a.my-btn, .my-btn {
+  color: #00ADB5;
+  background-color: transparent;
+  border-color: #00ADB5;
+  border-width: 3px;
+  font-family: "Open Sans", sans-serif;
+}
+a.my-btn:hover, .my-btn:hover {
+  background-color: #00ADB5;
+  border-color: #222831;
+  box-shadow: 3px 3px #EEEEEE;
+  border-radius: 10px;
+}
+a.my-btn:hover svg, .my-btn:hover svg {
+  fill: #222831;
+}
+a.my-btn:active, .my-btn:active {
+  color: #222831;
+  background-color: #EEEEEE !important;
+  border-color: dark;
+  box-shadow: none;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #222831;
+  border-bottom: 3px solid #00ADB5;
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding-bottom: 3vh;
+  }
+}
+.navbar .nav-item {
+  margin: 4px;
+}
+.navbar .nav-item .active {
+  background-color: #00ADB5;
+  border-color: #222831;
+  box-shadow: 3px 3px #EEEEEE;
+  border-radius: 10px;
+}
+.navbar .nav-item .nav-link {
+  color: #EEEEEE;
+  font-family: "Raleway", sans-serif;
+}
+.navbar .nav-item .nav-link:hover {
+  background-color: #00ADB5;
+  border-color: #222831;
+  box-shadow: 3px 3px #EEEEEE;
+  border-radius: 10px;
+}
+.navbar .nav-item .nav-link:active {
+  color: #222831;
+  background-color: #EEEEEE !important;
+  border-color: dark;
+  box-shadow: none;
+}
+.navbar button.navbar-toggler {
+  color: #00ADB5;
+  background-color: transparent;
+  border-color: #00ADB5;
+  border-width: 3px;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar button.navbar-toggler:hover {
+  background-color: #00ADB5;
+  border-color: #222831;
+  box-shadow: 3px 3px #EEEEEE;
+  border-radius: 10px;
+}
+.navbar button.navbar-toggler:active {
+  color: #222831;
+  background-color: #EEEEEE !important;
+  border-color: dark;
+  box-shadow: none;
+}
+.navbar .navbar-collapse {
+  flex-grow: unset;
+}
+
+#carousel {
+  background-color: #222831;
+}
+#carousel .my-grid {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  column-gap: 1vw;
+}
+#carousel .my-grid img {
+  width: 50vw;
+}
+#carousel .my-grid p {
+  padding-right: 2vw;
+}
+#carousel .my-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 49%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #222831 2%, rgba(34, 40, 49, 0.35) 15%, transparent 30%, transparent 70%, rgba(34, 40, 49, 0.35) 85%, #222831 97%);
+}
+@media screen and (max-width: 750px) {
+  #carousel .my-grid {
+    display: block;
+  }
+  #carousel .my-grid img {
+    width: 100vw;
+    position: absolute;
+  }
+  #carousel .my-grid .text-start {
+    width: 100vw;
+    z-index: 2;
+    padding: 1vh 1vw;
+    margin-top: 40vh;
+  }
+  #carousel .my-grid::before {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to top, rgb(34, 40, 49) 0%, rgba(0, 0, 0, 0) 75%);
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carousel .my-grid .text-start {
+    margin-top: 20vh;
+  }
+  #carousel .my-grid::before {
+    background: linear-gradient(to top, rgb(34, 40, 49) 5%, rgba(0, 0, 0, 0) 90%);
+  }
+}
+#carousel .carousel-text {
+  color: #EEEEEE;
+  padding-right: 10px;
+}
+#carousel .carousel-text h1 {
+  font-size: "Raleway", sans-serif;
+}
+
+.top-seller {
+  margin: 0;
+  padding: 15px 20px 10px;
+  color: #EEEEEE;
+  border-width: 3px;
+  font-family: "Raleway", sans-serif;
+  border-style: solid;
+  border-image: linear-gradient(to top, transparent 25%, #00ADB5 50%) 1 stretch;
+}
+
+.products-container {
+  margin: 0;
+  background-color: #222831;
+  padding: 20px;
+}
+.products-container .card {
+  background-color: #393E46;
+}
+.products-container .card-body {
+  color: #EEEEEE;
+}
+.products-container .card-body h5 {
+  font-family: "Raleway", sans-serif;
+}
+.products-container .card-body p {
+  font-family: "Open Sans", sans-serif;
+}
+.products-container .card .item-list .list-group-item {
+  background-color: #393E46;
+  color: #EEEEEE;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer footer {
+  background-color: #222831;
+  border-top: 3px solid #00ADB5;
+}
+.footer span {
+  color: #EEEEEE;
+  font-family: "Open Sans", sans-serif;
+}
+.footer svg {
+  fill: #00ADB5;
+}
+
+* {
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+body {
+  background-color: #222831;
+}
+
+/*# sourceMappingURL=style2.css.map */

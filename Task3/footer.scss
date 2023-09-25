@@ -1,0 +1,17 @@
+.footer{
+
+    footer{
+        background-color: $dark;
+        border-top: $border-width solid $blue;
+    }
+
+    span{
+        color: $light;
+        font-family: $text-font;
+    }
+
+    svg{
+        fill: $blue;
+    }
+
+}

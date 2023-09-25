@@ -1,0 +1,21 @@
+Task Description:
+
+You are required to create a landing page for a fictional company that sells tech gadgets. The page should be well-designed, responsive, and demonstrate your understanding of advanced CSS concepts.
+
+Header Section:
+    Create a header section that includes the company logo on the left and navigation links on the right.
+    Style the header with a background color, and change the color of the text and links.
+    Add a hover effect to the navigation links.
+Hero Section (Banner):
+    Create a hero section that includes a headline, a subheadline, and a call to action button.
+    Style the hero section with a background image, and make sure the text is legible on all devices.
+Product Section:
+    Create a section that showcases three of the company's top-selling products.
+    Each product should have an image, a title, a brief description, and a price.
+    Arrange the products in a grid layout.
+Footer Section:
+    Create a footer section that includes links to the company's social media profiles and a copyright notice.
+    Style the footer with a background color, and change the color of the text and links.
+Responsiveness:
+    Use media queries to make the design responsive on all devices.
+T   he navigation links in the header should collapse into a hamburger menu on mobile devices.

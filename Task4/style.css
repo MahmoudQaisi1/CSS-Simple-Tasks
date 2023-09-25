@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s;
+}
+
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #b4d0e7;
+  width: 99vw;
+  margin: 5vh 0;
+  padding: 3vh 3vw;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .banner-container {
+    padding: 2vh 2vw;
+    width: 98vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-container {
+    padding: 1vh 1vw;
+    width: 98vw;
+  }
+}
+.banner-container .banner-img {
+  width: 65vw;
+  margin: 2vh 2vw;
+  border: 8px solid #7E1717;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .banner-container .banner-img {
+    width: 80vw;
+    margin: 1vh 1vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-container .banner-img {
+    width: 92vw;
+    margin: 1vh 1vw;
+  }
+}
+.banner-container .banner-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  width: 70vw;
+  height: auto;
+}
+.banner-container .banner-body h2 {
+  color: #7E1717;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+}
+.banner-container .banner-body p {
+  color: #7E1717;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 1vh 1vw;
+}
+.banner-container .banner-body button {
+  color: #7E1717;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  padding: 0.5vh 1vw;
+  margin: 0.5vh auto;
+  background-color: transparent;
+  border: none;
+  transition: border 0.5s;
+}
+.banner-container .banner-body button:hover {
+  border-bottom: 3px solid #7E1717;
+}
+
+.showcase-container {
+  display: grid;
+  width: 95vw;
+  grid-template-columns: 25vw 25vw 25vw;
+  column-gap: 3vh;
+  justify-content: space-evenly;
+  margin: 2vh 2vw;
+  padding: 1vh 1vw;
+  row-gap: 4vh;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .showcase-container {
+    grid-template-columns: 40vw 40vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .showcase-container {
+    grid-template-columns: 90vw;
+    margin: auto 2vw;
+  }
+}
+.showcase-container .card {
+  width: 22vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .showcase-container .card {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .showcase-container .card {
+    width: 85vw;
+  }
+}
+.showcase-container .card .card-image {
+  width: 20vw;
+  border: 8px solid #7E1717;
+  margin: 1vh 1vw;
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+  .showcase-container .card .card-image {
+    width: 33vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .showcase-container .card .card-image {
+    width: 50vw;
+  }
+}
+.showcase-container .card .card-body h3 {
+  color: #7E1717;
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+}
+.showcase-container .card .card-body p {
+  color: #7E1717;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 1vh 1vw;
+}
+
+/*# sourceMappingURL=style.css.map */

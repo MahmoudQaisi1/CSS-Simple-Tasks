@@ -1,0 +1,48 @@
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $dark;
+    border-bottom: $border-width solid $blue;
+
+    @media screen and (max-width: 1000px){
+        padding-bottom: $navbar-padding;
+    }
+
+    .nav-item{
+        margin: $nav-item-margin;
+
+        .active{
+            @include button-hover();
+        }
+
+        .nav-link{
+            color: $light;
+            font-family: $header-font;
+
+            &:hover{
+                @include button-hover();
+            }
+
+            &:active{
+                @include button-active();
+            }
+        }
+    }
+
+    button.navbar-toggler{
+        @include my-btn();
+
+        &:hover{
+            @include button-hover();
+        }
+
+        &:active{
+            @include button-active();
+        }
+    }
+
+    .navbar-collapse{
+        flex-grow: unset;
+    }
+
+}

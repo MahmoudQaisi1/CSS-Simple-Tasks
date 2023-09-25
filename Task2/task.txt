@@ -1,0 +1,17 @@
+#2: Task Description (Box Model):
+
+You are required to create an HTML page that contains several boxes (div elements) with different properties
+
+Create an HTML file with a series of div elements. Assign each div a unique ID or class.
+Using CSS, style each div differently, making sure to demonstrate your understanding of the following properties:
+margin
+padding
+border
+width
+height
+For each div, do the following:
+Set a different background color.
+Set a border with a different color, width, and style (solid, dashed, etc.).
+Set a different margin and padding value.
+Set a different width and height.
+Within each div, add some text that indicates the values of margin, padding, border, width, and height you have set, e.g., "This box has a margin of 20px, padding of 30px, a border of 5px solid red, a width of 200px, and a height of 150px".

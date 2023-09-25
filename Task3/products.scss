@@ -1,0 +1,41 @@
+
+.top-seller{
+    margin: 0;
+    padding: $top-seller-padding;
+    color:$light;
+    border-width: $border-width;
+    font-family: $header-font;
+    border-style: solid;
+    border-image: $top-seller-border-image;
+}
+
+
+.products-container{
+    margin:0;
+    background-color: $dark;
+    padding: $product-container-padding;
+
+
+    .card{
+        background-color: $grey;
+
+        &-body{
+            color: $light;
+
+            h5 {
+                font-family: $header-font;
+
+            }
+
+            p{
+                font-family: $text-font;
+            }
+        }
+            
+        .item-list .list-group-item{
+            background-color: $grey;
+            color: $light;
+            font-family: $text-font;
+        }
+    }
+}

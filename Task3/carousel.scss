@@ -1,0 +1,73 @@
+#carousel{
+    
+    background-color: $dark;
+
+    .my-grid{
+
+        display: grid;
+        grid-template-columns: 50vw 50vw;;
+        column-gap: 1vw;
+
+        @media  screen and (max-width: 750px) {
+            display: block;
+        }
+
+        img{
+            width: 50vw;
+            @media  screen and (max-width: 750px) {
+                width: 100vw;
+                position: absolute;
+            }
+        }
+
+        p{
+            padding-right: 2vw;
+        }
+
+        &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 49%;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, $dark 2%, $blurry-dark 15%, 
+                                        transparent 30%, transparent 70%, 
+                                        $blurry-dark 85%, $dark 97%);
+
+        @media  screen and (max-width: 750px) {
+            position: absolute;
+            right: 0;
+            background: linear-gradient(to top, rgba(34,40,49,1) 0%, rgba(0,0,0,0) 75%);
+            z-index: 1;
+        }
+
+        @media  screen and (max-width: 550px) {
+            background: linear-gradient(to top, rgba(34,40,49,1) 5%, rgba(0,0,0,0) 90%);
+        }
+        }
+
+        .text-start{
+            @media  screen and (max-width: 750px) {
+                width: 100vw;
+                z-index: 2;
+                padding: 1vh 1vw;
+                margin-top: 40vh;
+            }
+
+            @media  screen and (max-width: 550px) {
+                margin-top: 20vh;
+            }
+
+        }
+    }
+
+    .carousel-text{
+        color: $light;
+        padding-right: $carousel-text-padding-right;
+
+        h1{
+            font-size: $header-font;
+        }
+    }
+}
